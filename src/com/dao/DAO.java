@@ -17,13 +17,12 @@ public class DAO {
 	public int registerUser(RegisterModel rm) throws ClassNotFoundException, SQLException {
 
 		Connection con = DbConnection.getCon();
-		String sql = "insert into register values(0,?,?,?,?,?)";
+		String sql = "insert into register values(0,?,?,?,?)";
 		PreparedStatement ps = con.prepareStatement(sql);
 		ps.setString(1, rm.getName());
 		ps.setString(2, rm.getEmailid());
-		ps.setString(3, rm.getAddress());
-		ps.setString(4, rm.getGender());
-		ps.setString(5, rm.getPassword());
+		ps.setString(3, rm.getPassword());
+		ps.setString(4, rm.getAddress());
 		int statusReg = ps.executeUpdate();
 		return statusReg;
 	}

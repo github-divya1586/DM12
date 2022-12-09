@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,13 +37,15 @@
             </div>
             <div class="col-xl-6">
               <div class="card-body p-md-5 text-black">
+             ${alert}
+              ${info}
                 <center><h3 class="mb-5 text-uppercase"> Registration </h3></center>
   <form action="Register" method="post">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-outline mb-4">
                       <input type="text" id="form3Example1m" class="form-control form-control-lg"  name="uname"/>
-                      <label class="form-label" for="form3Example1m">Name</label>
+                      <label class="form-label" for="form3Example1m">Hospital Name</label>
                     </div>
                   </div>
                   
@@ -52,25 +55,10 @@
 
                 <div class="form-outline mb-4">
                   <input type="text" id="form3Example8" class="form-control form-control-lg" name="address" />
-                  <label class="form-label" for="form3Example8">Address</label>
+                  <label class="form-label" for="form3Example8">Hospital Address</label>
                 </div>
 
-                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-
-                  <h6 class="mb-0 me-4">Gender: </h6>
-
-                  <div class="form-check form-check-inline mb-0 me-4">
-                    <input class="form-check-input" type="radio" name="gender" id="femaleGender"
-                      value="female" />
-                    <label class="form-check-label" for="femaleGender">Female</label>
-                  </div>
-
-                  <div class="form-check form-check-inline mb-0 me-4">
-                    <input class="form-check-input" type="radio" name="gender" id="maleGender"
-                      value="male" />
-                    <label class="form-check-label" for="maleGender">Male</label>
-                  </div>
-                  </div>
+               
                  <div class="form-outline mb-4">
                  <input type="text" id="form3Example97" class="form-control form-control-lg" name="emailid" />
                   <label class="form-label" for="form3Example97">Email ID</label>

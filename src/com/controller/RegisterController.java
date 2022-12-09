@@ -27,15 +27,13 @@ public class RegisterController  extends HttpServlet{
 		String uname=req.getParameter("uname");
 		String emailid=req.getParameter("emailid");
 		String password=req.getParameter("password");
-		String gender=req.getParameter("gender");
 		String address=req.getParameter("address");
 		
-		System.out.println(uname+emailid+password+gender+address);
+		System.out.println(uname+emailid+password+address);
 		RegisterModel rm= new RegisterModel();
 		rm.setName(uname);
 		rm.setEmailid(emailid);
 		rm.setPassword(password);
-		rm.setGender(gender);
 		rm.setAddress(address);
 		
 		try {
