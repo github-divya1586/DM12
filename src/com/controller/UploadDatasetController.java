@@ -14,7 +14,6 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.FileItem;
 
-@WebServlet("/upload")
 public class UploadDatasetController  extends HttpServlet{
 
 	/**
